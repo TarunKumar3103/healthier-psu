@@ -44,7 +44,7 @@ export default function NutrientChart({ calories, protein_g, meals }: Props) {
   const macros = [{ label:"Protein", kcal:proteinKcal, color:PROTEIN_COLOR },{ label:"Carbs", kcal:carbsKcal, color:CARBS_COLOR },{ label:"Fat", kcal:fatKcal, color:FAT_COLOR }];
   let currentAngle = 0;
   const slices = macros.map((m) => { const startDeg=currentAngle, endDeg=currentAngle+(m.kcal/total)*360; currentAngle=endDeg; return {...m,startDeg,endDeg}; });
-  const cx=90,cy=90,outerR=70,innerR=44;
+  const cx=120,cy=120,outerR=100,innerR=62;
   const mealList = meals ? [
     {label:"Breakfast",cal:meals.breakfast.totals.calories,color:"#60a5fa"},
     {label:"Lunch",cal:meals.lunch.totals.calories,color:"#a78bfa"},
@@ -60,13 +60,13 @@ export default function NutrientChart({ calories, protein_g, meals }: Props) {
       ) : (
         <>
           <div style={{ display:"flex", justifyContent:"center", marginBottom:14 }}>
-            <svg width={180} height={180} style={{ overflow:"visible" }}>
+            <svg width={240} height={240} style={{ overflow:"visible" }}>
               <circle cx={cx} cy={cy} r={(outerR+innerR)/2} fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth={outerR-innerR} />
               {slices.map((s) => (
-                <path key={s.label} d={donutSlicePath(cx,cy,outerR,innerR,s.startDeg,s.endDeg)} fill={s.color} opacity={0.92} style={{ filter:`drop-shadow(0 0 5px ${s.color}90)`, transition:"opacity 0.3s" }} />
+                <path key={s.label} d={donutSlicePath(cx,cy,outerR,innerR,s.startDeg,s.endDeg)} fill={s.color} opacity={0.92} style={{ filter:`drop-shadow(0 0 6px ${s.color}90)`, transition:"opacity 0.3s" }} />
               ))}
-              <text x={cx} y={cy-7} textAnchor="middle" fill={TEXT} fontSize={20} fontWeight={900} fontFamily={FONT}>{(calories??0).toLocaleString()}</text>
-              <text x={cx} y={cy+10} textAnchor="middle" fill={MUTED} fontSize={10} fontFamily={FONT}>kcal total</text>
+              <text x={cx} y={cy-10} textAnchor="middle" fill={TEXT} fontSize={26} fontWeight={900} fontFamily={FONT}>{(calories??0).toLocaleString()}</text>
+              <text x={cx} y={cy+13} textAnchor="middle" fill={MUTED} fontSize={12} fontFamily={FONT}>kcal total</text>
             </svg>
           </div>
           <div style={{ display:"flex", flexDirection:"column", gap:7, marginBottom:14 }}>

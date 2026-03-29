@@ -11,9 +11,9 @@ interface Props {
 }
 
 export default function MacroRing({ current, target, color, label, unit = 'g' }: Props) {
-  const size = 80
-  const strokeWidth = 8
-  const r = 34
+  const size = 120
+  const strokeWidth = 10
+  const r = 50
   const cx = size / 2
   const cy = size / 2
   const circumference = 2 * Math.PI * r
@@ -49,21 +49,18 @@ export default function MacroRing({ current, target, color, label, unit = 'g' }:
           />
         </svg>
         {/* Center label */}
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center"
-          style={{ fontSize: 10 }}
-        >
-          <span className="font-syne font-bold" style={{ color, fontSize: 11, lineHeight: 1 }}>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <span className="font-syne font-bold" style={{ color, fontSize: 16, lineHeight: 1 }}>
             {Math.round(current)}
           </span>
-          <span className="text-muted" style={{ fontSize: 8 }}>{unit}</span>
+          <span className="text-muted" style={{ fontSize: 11 }}>{unit}</span>
         </div>
       </div>
       <div className="font-syne text-xs text-center">
-        <div className="text-cream" style={{ fontSize: 10 }}>
+        <div className="text-cream" style={{ fontSize: 12 }}>
           {Math.round(current)}{unit} / {Math.round(target)}{unit}
         </div>
-        <div className="text-muted" style={{ fontSize: 9 }}>{label}</div>
+        <div className="text-muted" style={{ fontSize: 11 }}>{label}</div>
       </div>
     </div>
   )

@@ -10,8 +10,8 @@ const config: Config = {
         amber: '#009CDE',        // PSU sky blue — primary CTA
         'green-accent': '#4DAFD4', // lighter sky blue
         coral: '#E05C7A',        // rose — delete / danger
-        cream: '#EEF4FF',        // near-white
-        muted: '#6B8FAF',        // muted blue
+        cream: '#FFFFFF',        // white
+        muted: '#B0C4D8',        // light muted
         'psu-navy': '#1E407C',   // official Penn State navy
         'psu-sky': '#009CDE',    // official Penn State sky blue
       },

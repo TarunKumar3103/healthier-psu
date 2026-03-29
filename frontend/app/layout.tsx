@@ -1,17 +1,17 @@
 'use client'
 
 import './globals.css'
-import { Syne, DM_Sans } from 'next/font/google'
+import { Barlow, Inter } from 'next/font/google'
 
-const syne = Syne({
-  weight: ['700', '800'],
+const barlow = Barlow({
+  weight: ['600', '700', '800'],
   subsets: ['latin'],
   variable: '--font-syne',
   display: 'swap',
 })
 
-const dmSans = DM_Sans({
-  weight: ['300', '400', '500'],
+const inter = Inter({
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
   variable: '--font-dm',
   display: 'swap',
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${barlow.variable} ${inter.variable}`}>
       <body className="bg-background font-dm text-cream min-h-screen">
         {children}
       </body>

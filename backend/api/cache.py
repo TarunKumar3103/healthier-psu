@@ -44,18 +44,23 @@ def is_cache_stale(meta: dict) -> bool:
 
 
 def load_items_with_meta(location_id: Optional[str] = None) -> Tuple[dict, list]:
-    paths = [
-        _cache_path_for(location_id),
-        CACHE_PATH,
-        SAMPLE_CACHE_PATH,
-    ]
-    for p in paths:
+    specific = _cache_path_for(location_id)
+    # If a specific location is requested, only load that location's cache.
+    # Never fall back to another hall's data — return stale meta so a scrape is triggered.
+    if location_id and location_id != "0":
+        if specific.exists():
+            try:
+                data = load_json(specific)
+                return data.get("meta", {}), data.get("items", [])
+            except Exception:
+                pass
+        return {"source": "empty", "last_refreshed": "never"}, []
+    # No specific location — try default cache then sample
+    for p in [CACHE_PATH, SAMPLE_CACHE_PATH]:
         if p.exists():
             try:
                 data = load_json(p)
-                meta = data.get("meta", {})
-                items = data.get("items", [])
-                return meta, items
+                return data.get("meta", {}), data.get("items", [])
             except Exception:
                 continue
     return {"source": "sample", "last_refreshed": "never"}, []

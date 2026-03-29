@@ -42,23 +42,23 @@ export default function CalorieHero({ consumed, goal, protein, carbs, fat }: Pro
       </div>
 
       {/* Macro rings */}
-      <div className="mt-5 flex flex-row justify-center gap-6">
+      <div className="mt-5 flex flex-row justify-center gap-8">
         <MacroRing
           current={protein.current}
           target={protein.target}
-          color="#009CDE"
+          color="#f87171"
           label="Protein"
         />
         <MacroRing
           current={carbs.current}
           target={carbs.target}
-          color="#4DAFD4"
+          color="#34d399"
           label="Carbs"
         />
         <MacroRing
           current={fat.current}
           target={fat.target}
-          color="#7BA3D4"
+          color="#fbbf24"
           label="Fat"
         />
       </div>

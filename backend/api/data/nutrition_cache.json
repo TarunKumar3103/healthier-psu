@@ -3612,5 +3612,390 @@
       "soy",
       "wheat"
     ]
+  },
+  "188127743": {
+    "calories": 175,
+    "protein_g": 23,
+    "allergens": [
+      "food item"
+    ]
+  },
+  "188127744": {
+    "calories": 458,
+    "protein_g": 12,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127745": {
+    "calories": 113,
+    "protein_g": 1,
+    "allergens": [
+      "dairy",
+      "food"
+    ]
+  },
+  "188127746": {
+    "calories": 45,
+    "protein_g": 1,
+    "allergens": []
+  },
+  "188127747": {
+    "calories": 1320,
+    "protein_g": 55,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127748": {
+    "calories": 2006,
+    "protein_g": 86,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127749": {
+    "calories": 1364,
+    "protein_g": 87,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127750": {
+    "calories": 1476,
+    "protein_g": 65,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127751": {
+    "calories": 1272,
+    "protein_g": 68,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127752": {
+    "calories": 1350,
+    "protein_g": 66,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127753": {
+    "calories": 1377,
+    "protein_g": 55,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "fish",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127754": {
+    "calories": 1318,
+    "protein_g": 69,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127755": {
+    "calories": 916,
+    "protein_g": 36,
+    "allergens": [
+      "dairy",
+      "gluten",
+      "wheat"
+    ]
+  },
+  "188127756": {
+    "calories": 764,
+    "protein_g": 21,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "fish",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127757": {
+    "calories": 312,
+    "protein_g": 11,
+    "allergens": [
+      "dairy",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127758": {
+    "calories": 497,
+    "protein_g": 27,
+    "allergens": [
+      "gluten",
+      "sesame",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127759": {
+    "calories": 549,
+    "protein_g": 29,
+    "allergens": [
+      "dairy",
+      "gluten",
+      "sesame",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127760": {
+    "calories": 378,
+    "protein_g": 20,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127761": {
+    "calories": 792,
+    "protein_g": 30,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127762": {
+    "calories": 0,
+    "protein_g": 0,
+    "allergens": []
+  },
+  "188127763": {
+    "calories": 220,
+    "protein_g": 8,
+    "allergens": [
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127764": {
+    "calories": 2,
+    "protein_g": null,
+    "allergens": []
+  },
+  "188127765": {
+    "calories": 664,
+    "protein_g": 33,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127766": {
+    "calories": 1011,
+    "protein_g": 41,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127767": {
+    "calories": 760,
+    "protein_g": 48,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127768": {
+    "calories": 1066,
+    "protein_g": 59,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127769": {
+    "calories": 963,
+    "protein_g": 54,
+    "allergens": [
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127770": {
+    "calories": 784,
+    "protein_g": 16,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "fish",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127771": {
+    "calories": 611,
+    "protein_g": 29,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127772": {
+    "calories": 308,
+    "protein_g": 2,
+    "allergens": [
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127773": {
+    "calories": 452,
+    "protein_g": 10,
+    "allergens": [
+      "dairy",
+      "food"
+    ]
+  },
+  "188127774": {
+    "calories": 832,
+    "protein_g": 33,
+    "allergens": [
+      "dairy",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127775": {
+    "calories": 363,
+    "protein_g": 13,
+    "allergens": [
+      "dairy",
+      "gluten",
+      "sesame",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127776": {
+    "calories": 772,
+    "protein_g": 37,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127777": {
+    "calories": 95,
+    "protein_g": 19,
+    "allergens": []
+  },
+  "188127778": {
+    "calories": 429,
+    "protein_g": 33,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127779": {
+    "calories": 612,
+    "protein_g": 31,
+    "allergens": [
+      "eggs",
+      "gluten",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127780": {
+    "calories": 562,
+    "protein_g": 38,
+    "allergens": [
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127781": {
+    "calories": 674,
+    "protein_g": 8,
+    "allergens": [
+      "dairy",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127782": {
+    "calories": 453,
+    "protein_g": 17,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
+  },
+  "188127783": {
+    "calories": 611,
+    "protein_g": 26,
+    "allergens": [
+      "dairy",
+      "eggs",
+      "soy",
+      "wheat"
+    ]
   }
 }

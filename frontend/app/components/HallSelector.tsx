@@ -1,7 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
-
 interface Hall {
   id: string
   name: string
@@ -13,34 +11,21 @@ interface Props {
   onSelect: (id: string) => void
 }
 
-function shortenName(name: string): string {
-  // Strip "UP: " prefix
-  let n = name.replace(/^UP:\s*/i, '')
-  // Keep only first part before "@"
-  const atIdx = n.indexOf('@')
-  if (atIdx !== -1) {
-    n = n.substring(0, atIdx).trim()
-  }
-  return n
-}
-
 export default function HallSelector({ halls, selected, onSelect }: Props) {
   return (
-    <div className="overflow-x-auto no-scrollbar flex gap-2 pb-1">
-      {halls.map((hall) => (
-        <motion.button
-          key={hall.id}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => onSelect(hall.id)}
-          className={`font-dm font-medium text-sm px-4 py-2 rounded-full border whitespace-nowrap flex-shrink-0 transition-colors ${
-            selected === hall.id
-              ? 'bg-amber text-background border-amber'
-              : 'bg-surface text-cream border-border'
-          }`}
-        >
-          {shortenName(hall.name)}
-        </motion.button>
-      ))}
+    <div className="relative w-full">
+      <select
+        value={selected}
+        onChange={(e) => onSelect(e.target.value)}
+        className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-cream font-dm text-sm appearance-none focus:outline-none focus:border-amber transition-colors cursor-pointer"
+      >
+        {halls.map((hall) => (
+          <option key={hall.id} value={hall.id} className="bg-surface text-cream">
+            {hall.name}
+          </option>
+        ))}
+      </select>
+      <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-muted text-xs">▼</div>
     </div>
   )
 }

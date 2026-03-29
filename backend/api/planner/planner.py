@@ -76,13 +76,13 @@ def _allowed(item: dict, vegetarian: bool, avoid_allergens: List[str]) -> bool:
 
 
 def _available_for_meal(item: dict, meal_slot: str) -> bool:
-    """Return True if the item is available during the given meal slot.
+    """Return True if the item is labelled for the given meal slot.
 
-    If the item has no meal_periods data (legacy cache), assume available for all.
+    Items with no meal_periods data are not placed in any specific meal slot.
     """
     meal_periods = item.get("meal_periods") or []
     if not meal_periods:
-        return True
+        return False  # no label → don't assign to a specific meal
     target = MEAL_PERIOD_MAP.get(meal_slot)
     if target is None:
         return True  # extras — no restriction
@@ -200,13 +200,15 @@ def build_plan(
         "lunch": calories_target * 0.35,
         "dinner": calories_target * 0.35,
     }
+    # Detect whether cache has any meal period data at all
+    has_period_data = any(i.get("meal_periods") for i in filtered)
+
     used_mids: Set[str] = set()
     meals: Dict[str, dict] = {}
     for meal_name, budget in budgets.items():
-        # Filter to items available for this meal period
         meal_items = [i for i in filtered if _available_for_meal(i, meal_name)]
-        # Fall back to all filtered items if meal-period data left nothing
-        if not meal_items:
+        # Only fall back if the entire cache has no meal period data (old format)
+        if not meal_items and not has_period_data:
             meal_items = filtered
         picked = _pick_unique(meal_items, budget, protein_priority, used_mids, rng, goal_type, food_preferences, station_preference)
         meals[meal_name] = {"items": picked, "totals": _totals(picked)}

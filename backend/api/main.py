@@ -25,6 +25,7 @@ from api.planner.planner import build_plan
 from api.scrape.daily_menu import (
     _today_str,
     fetch_daily_menu_html,
+    fetch_all_mids_and_names,
     get_menu_mids_and_names,
 )
 from api.scrape.nutrition_label import (
@@ -102,14 +103,14 @@ class TrackerAddRequest(BaseModel):
 
 def _do_scrape(location_id: str, limit: int = 80):
     date_str = _today_str()
-    html = fetch_daily_menu_html(date_str=date_str, campus_id=location_id)
-    save_raw_debug(f"last_menu_{location_id}.html", html)
-    mids, mid_to_meta = get_menu_mids_and_names(html)
+    mids, mid_to_meta = fetch_all_mids_and_names(date_str=date_str, campus_id=location_id)
+    print(f"[scrape {location_id}] mids_found={len(mids)}")
     if not mids:
         return None, f"No nutrition links found in menu HTML for location {location_id}."
     mids = mids[:limit]
     ncache = load_nutrition_cache()
     items = []
+    null_nutrition = 0
     for mid in mids:
         if mid in ncache:
             nutrition = ncache[mid]
@@ -118,8 +119,11 @@ def _do_scrape(location_id: str, limit: int = 80):
                 nhtml = fetch_nutrition_html(mid)
                 nutrition = parse_nutrition(nhtml)
                 ncache[mid] = nutrition
-            except Exception:
+            except Exception as e:
+                print(f"[scrape {location_id}] nutrition fetch failed for mid={mid}: {e}")
                 nutrition = {"calories": None, "protein_g": None, "allergens": []}
+        if nutrition.get("calories") is None:
+            null_nutrition += 1
         meta = mid_to_meta.get(mid, {})
         name = meta.get("name") or f"Item {mid}"
         items.append(
@@ -135,9 +139,21 @@ def _do_scrape(location_id: str, limit: int = 80):
                 "meal_periods": meta.get("meal_periods", []),
             }
         )
+    print(f"[scrape {location_id}] total={len(items)} null_nutrition={null_nutrition}")
     save_nutrition_cache(ncache)
     save_items(items, source=f"scrape:{location_id}", location_id=location_id)
     return items, None
+
+
+@app.get("/debug/scrape/{location_id}")
+def debug_scrape(location_id: str):
+    mids, meta = fetch_all_mids_and_names(campus_id=location_id)
+    periods = {}
+    for mid in mids:
+        for p in meta[mid].get("meal_periods", ["unknown"]):
+            periods.setdefault(p, 0)
+            periods[p] += 1
+    return {"total_mids": len(mids), "by_meal_period": periods, "sample": mids[:5]}
 
 
 @app.post("/auth/register")
@@ -188,6 +204,28 @@ def get_stations(location_id: Optional[str] = None):
     _, items = load_items_with_meta(location_id)
     stations = sorted({i.get("station", "") for i in items if i.get("station")})
     return {"stations": stations}
+
+
+@app.get("/items/all")
+def get_all_items():
+    from pathlib import Path
+    import json as _json
+    data_dir = Path(__file__).parent / "data"
+    seen = set()
+    combined = []
+    for path in sorted(data_dir.glob("cache*.json")):
+        try:
+            data = _json.loads(path.read_text(encoding="utf-8"))
+            loc_id = data.get("meta", {}).get("location_id", "0")
+            loc_name = LOCATIONS.get(str(loc_id), "Penn State Dining")
+            for item in data.get("items", []):
+                mid = item.get("mid")
+                if mid and mid not in seen:
+                    seen.add(mid)
+                    combined.append({**item, "location_name": loc_name})
+        except Exception:
+            continue
+    return {"count": len(combined), "items": combined}
 
 
 @app.get("/items")

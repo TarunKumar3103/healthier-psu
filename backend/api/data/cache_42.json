@@ -1,0 +1,722 @@
+{
+  "meta": {
+    "source": "scrape:42",
+    "last_refreshed": "2026-03-29T01:30:56",
+    "location_id": "42"
+  },
+  "items": [
+    {
+      "mid": "188127743",
+      "name": "Bruschetta Chicken Parmesan",
+      "calories": 175,
+      "protein_g": 23,
+      "allergens": [
+        "food item"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127743",
+      "is_vegetarian": null,
+      "station": "CHEF'S TABLE  ENTREES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127744",
+      "name": "Gnocchi with Wild Mushroom Ragout",
+      "calories": 458,
+      "protein_g": 12,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127744",
+      "is_vegetarian": null,
+      "station": "CHEF'S TABLE  ENTREES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127745",
+      "name": "Roasted Ranch Yukon Gold Potatoes",
+      "calories": 113,
+      "protein_g": 1,
+      "allergens": [
+        "dairy",
+        "food"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127745",
+      "is_vegetarian": null,
+      "station": "CHEF'S TABLE  SIDES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127746",
+      "name": "Tuscan Garden Vegetables",
+      "calories": 45,
+      "protein_g": 1,
+      "allergens": [],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127746",
+      "is_vegetarian": null,
+      "station": "CHEF'S TABLE  SIDES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127747",
+      "name": "#1 All American",
+      "calories": 1320,
+      "protein_g": 55,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127747",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127748",
+      "name": "#11 Chicken Tender Club",
+      "calories": 2006,
+      "protein_g": 86,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127748",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127749",
+      "name": "#2 Roast Beef & Cheddar",
+      "calories": 1364,
+      "protein_g": 87,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127749",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127750",
+      "name": "#3 Italian",
+      "calories": 1476,
+      "protein_g": 65,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127750",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127751",
+      "name": "#4 Turkey & Provolone",
+      "calories": 1272,
+      "protein_g": 68,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127751",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127752",
+      "name": "#5 Turkey Club",
+      "calories": 1350,
+      "protein_g": 66,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127752",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127753",
+      "name": "#6 Tuna Salad & American Cheese",
+      "calories": 1377,
+      "protein_g": 55,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "fish",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127753",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127754",
+      "name": "#7 Roast Chicken & Provolone",
+      "calories": 1318,
+      "protein_g": 69,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127754",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127755",
+      "name": "#8 Veggie",
+      "calories": 916,
+      "protein_g": 36,
+      "allergens": [
+        "dairy",
+        "gluten",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127755",
+      "is_vegetarian": null,
+      "station": "ON A ROLL DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127756",
+      "name": "Battered Fish Sandwich",
+      "calories": 764,
+      "protein_g": 21,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "fish",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127756",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127757",
+      "name": "Beef Hot Dog",
+      "calories": 312,
+      "protein_g": 11,
+      "allergens": [
+        "dairy",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127757",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127758",
+      "name": "Beyond Burger",
+      "calories": 497,
+      "protein_g": 27,
+      "allergens": [
+        "gluten",
+        "sesame",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127758",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127759",
+      "name": "Beyond Cheeseburger",
+      "calories": 549,
+      "protein_g": 29,
+      "allergens": [
+        "dairy",
+        "gluten",
+        "sesame",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127759",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127760",
+      "name": "Black Bean Burger",
+      "calories": 378,
+      "protein_g": 20,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127760",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127761",
+      "name": "Black Bean Burger & Ranch Snack Wrap",
+      "calories": 792,
+      "protein_g": 30,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127761",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127762",
+      "name": "CYO Burger",
+      "calories": 0,
+      "protein_g": 0,
+      "allergens": [],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127762",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127763",
+      "name": "CYO Cheesesteak",
+      "calories": 220,
+      "protein_g": 8,
+      "allergens": [
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127763",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127764",
+      "name": "CYO Chicken Sandwich",
+      "calories": 2,
+      "protein_g": null,
+      "allergens": [],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127764",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127765",
+      "name": "Cheeseburger Single",
+      "calories": 664,
+      "protein_g": 33,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127765",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127766",
+      "name": "Chicken Tender & Ranch Snack Wrap",
+      "calories": 1011,
+      "protein_g": 41,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127766",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127767",
+      "name": "Chicken Tenders",
+      "calories": 760,
+      "protein_g": 48,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127767",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127768",
+      "name": "Double Cheeseburger",
+      "calories": 1066,
+      "protein_g": 59,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127768",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127769",
+      "name": "Double Hamburger Single",
+      "calories": 963,
+      "protein_g": 54,
+      "allergens": [
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127769",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127770",
+      "name": "Fish & Chips",
+      "calories": 784,
+      "protein_g": 16,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "fish",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127770",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127771",
+      "name": "Fried Chicken Sandwich",
+      "calories": 611,
+      "protein_g": 29,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127771",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127772",
+      "name": "Fries",
+      "calories": 308,
+      "protein_g": 2,
+      "allergens": [
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127772",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127773",
+      "name": "Gluten Free Grilled Cheese Sandwich",
+      "calories": 452,
+      "protein_g": 10,
+      "allergens": [
+        "dairy",
+        "food"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127773",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127774",
+      "name": "Grilled Cheese PSU",
+      "calories": 832,
+      "protein_g": 33,
+      "allergens": [
+        "dairy",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127774",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127775",
+      "name": "Grilled Cheese Sandwich",
+      "calories": 363,
+      "protein_g": 13,
+      "allergens": [
+        "dairy",
+        "gluten",
+        "sesame",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127775",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127776",
+      "name": "Grilled Chicken & Honey Mustard Snack Wrap",
+      "calories": 772,
+      "protein_g": 37,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127776",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127777",
+      "name": "Grilled Chicken Breast",
+      "calories": 95,
+      "protein_g": 19,
+      "allergens": [],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127777",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127778",
+      "name": "Grilled Chicken Sandwich",
+      "calories": 429,
+      "protein_g": 33,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127778",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127779",
+      "name": "Hamburger Single",
+      "calories": 612,
+      "protein_g": 31,
+      "allergens": [
+        "eggs",
+        "gluten",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127779",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127780",
+      "name": "Incogmeato Chik'n Tenders",
+      "calories": 562,
+      "protein_g": 38,
+      "allergens": [
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127780",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127781",
+      "name": "Mac & Cheese Bites",
+      "calories": 674,
+      "protein_g": 8,
+      "allergens": [
+        "dairy",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127781",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127782",
+      "name": "Mozzarella Sticks",
+      "calories": 453,
+      "protein_g": 17,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127782",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    },
+    {
+      "mid": "188127783",
+      "name": "Small Chicken Tenders & Fries",
+      "calories": 611,
+      "protein_g": 26,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "soy",
+        "wheat"
+      ],
+      "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188127783",
+      "is_vegetarian": null,
+      "station": "ALL FIRED UP DAILY FEATURES",
+      "meal_periods": [
+        "Dinner"
+      ]
+    }
+  ]
+}

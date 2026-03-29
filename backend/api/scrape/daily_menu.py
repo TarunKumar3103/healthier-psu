@@ -16,17 +16,44 @@ def _today_str() -> str:
     return f"{today.month}/{today.day}/{str(today.year)[2:]}"
 
 
-def fetch_daily_menu_html(date_str: str | None = None, campus_id: str = "0", timeout: int = 25) -> str:
+MEAL_PERIODS = ["Breakfast", "Lunch", "Dinner"]
+
+
+def fetch_daily_menu_html(date_str: str | None = None, campus_id: str = "0", meal: str = "", timeout: int = 25) -> str:
     if date_str is None:
         date_str = _today_str()
     payload = {
         "selMenuDate": date_str,
-        "selMeal": "",
+        "selMeal": meal,
         "selCampus": campus_id,
     }
     resp = requests.post(BASE_URL, data=payload, headers=HEADERS, timeout=timeout)
     resp.raise_for_status()
     return resp.text
+
+
+def fetch_all_mids_and_names(date_str: str | None = None, campus_id: str = "0") -> Tuple[List[str], Dict[str, dict]]:
+    """Fetch each meal period separately, parse each independently, then merge results."""
+    if date_str is None:
+        date_str = _today_str()
+    combined_mids: List[str] = []
+    combined_meta: Dict[str, dict] = {}
+    for meal in MEAL_PERIODS:
+        try:
+            html = fetch_daily_menu_html(date_str=date_str, campus_id=campus_id, meal=meal)
+            mids, meta = get_menu_mids_and_names(html)
+            for mid in mids:
+                if mid not in combined_meta:
+                    combined_meta[mid] = meta[mid]
+                    combined_mids.append(mid)
+                else:
+                    # merge meal_periods if item appears in multiple periods
+                    for period in meta[mid].get("meal_periods", []):
+                        if period not in combined_meta[mid]["meal_periods"]:
+                            combined_meta[mid]["meal_periods"].append(period)
+        except Exception:
+            continue
+    return combined_mids, combined_meta
 
 
 def extract_nutrition_links(html: str) -> List[str]:

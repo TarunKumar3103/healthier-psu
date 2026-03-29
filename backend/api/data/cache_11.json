@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "scrape:11",
-    "last_refreshed": "2026-03-29T00:00:38",
+    "last_refreshed": "2026-03-29T01:33:36",
     "location_id": "11"
   },
   "items": [
@@ -19,7 +19,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118244",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -37,7 +37,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118245",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -50,7 +50,7 @@
       "allergens": [],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118246",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -66,7 +66,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118247",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -82,7 +82,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118248",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -97,7 +97,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118249",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -112,7 +112,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118250",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -128,7 +128,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118251",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -146,7 +146,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118252",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "BAKERY",
       "meal_periods": [
         "Breakfast"
       ]
@@ -164,7 +164,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118253",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "BAKERY",
       "meal_periods": [
         "Breakfast"
       ]
@@ -181,7 +181,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118254",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "SIDES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -196,7 +196,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118255",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "SIDES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -211,7 +211,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118256",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "SIDES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -227,7 +227,7 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118257",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "SIDES",
       "meal_periods": [
         "Breakfast"
       ]
@@ -465,9 +465,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118272",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -483,9 +483,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118273",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -496,9 +496,9 @@
       "allergens": [],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118274",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -511,9 +511,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118275",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -524,9 +524,9 @@
       "allergens": [],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118276",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -540,9 +540,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118277",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -556,9 +556,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118278",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -571,9 +571,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118279",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -586,9 +586,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118280",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "ENTREES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -605,9 +605,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118281",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "VEGETABLES/STARCHES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -618,9 +618,9 @@
       "allergens": [],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118282",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "VEGETABLES/STARCHES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -633,9 +633,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118283",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "VEGETABLES/STARCHES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -646,9 +646,9 @@
       "allergens": [],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118284",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "VEGETABLES/STARCHES",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -663,9 +663,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118285",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "DESSERTS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -681,9 +681,9 @@
       ],
       "nutrition_url": "https://www.absecom.psu.edu/menus/user-pages/nutrition-label.cfm?mid=188118286",
       "is_vegetarian": null,
-      "station": "Buffet",
+      "station": "DESSERTS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -702,7 +702,7 @@
       "is_vegetarian": null,
       "station": "EDGE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -724,7 +724,7 @@
       "is_vegetarian": null,
       "station": "EDGE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -746,7 +746,7 @@
       "is_vegetarian": null,
       "station": "EDGE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -765,7 +765,7 @@
       "is_vegetarian": null,
       "station": "EDGE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -778,7 +778,7 @@
       "is_vegetarian": null,
       "station": "EDGE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -797,7 +797,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -815,7 +815,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -833,7 +833,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -852,7 +852,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -869,7 +869,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -886,7 +886,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -903,7 +903,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -921,7 +921,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -940,7 +940,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -958,7 +958,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -975,7 +975,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -988,7 +988,7 @@
       "is_vegetarian": null,
       "station": "GRILLERS",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1006,7 +1006,7 @@
       "is_vegetarian": null,
       "station": "ITALIAN",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1023,7 +1023,7 @@
       "is_vegetarian": null,
       "station": "ITALIAN",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1039,7 +1039,7 @@
       "is_vegetarian": null,
       "station": "ITALIAN",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1056,7 +1056,7 @@
       "is_vegetarian": null,
       "station": "ITALIAN",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1074,7 +1074,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1092,7 +1092,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1110,7 +1110,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1128,7 +1128,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1146,7 +1146,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1165,7 +1165,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1183,7 +1183,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1200,7 +1200,7 @@
       "is_vegetarian": null,
       "station": "ON A ROLL",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1213,7 +1213,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1226,7 +1226,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1239,7 +1239,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1252,7 +1252,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1267,7 +1267,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1280,7 +1280,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1295,7 +1295,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     },
     {
@@ -1308,7 +1308,7 @@
       "is_vegetarian": null,
       "station": "PURE",
       "meal_periods": [
-        "Breakfast"
+        "Lunch"
       ]
     }
   ]

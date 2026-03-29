@@ -371,17 +371,8 @@ export default function DashboardPage() {
               <div className="text-muted text-[10px] font-dm uppercase tracking-widest">We Are Penn State</div>
               <div className="font-syne font-bold text-cream text-lg leading-tight">{profile.name ?? 'Athlete'}</div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="px-3 py-1 rounded-full bg-amber/15 border border-amber/40 text-amber text-xs font-dm font-semibold capitalize tracking-wide">
-                {profile.goal}
-              </div>
-              <button
-                onClick={fetchPlans}
-                disabled={planLoading}
-                className="px-3 py-1 rounded-full bg-surface border border-border text-muted text-xs font-dm hover:text-cream transition-colors disabled:opacity-40"
-              >
-                {planLoading ? '…' : '↻'}
-              </button>
+            <div className="px-3 py-1 rounded-full bg-amber/15 border border-amber/40 text-amber text-xs font-dm font-semibold capitalize tracking-wide">
+              {profile.goal}
             </div>
           </div>
         </div>
@@ -396,37 +387,36 @@ export default function DashboardPage() {
             fat={{     current: planFat,   target: fatTarget }}
           />
 
-          {/* Hall selector */}
+          {/* Hall + Preferences dropdowns + Generate */}
           {halls.length > 0 && (
-            <HallSelector
-              halls={halls}
-              selected={selectedHall}
-              onSelect={id => { setSelectedHall(id); setPlans([null, null, null, null]) }}
-            />
-          )}
-
-          {/* Station chips */}
-          {stations.length > 0 && (
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex flex-col gap-3">
+              <div className="flex gap-3">
+                <HallSelector
+                  halls={halls}
+                  selected={selectedHall}
+                  onSelect={id => { setSelectedHall(id); setPlans([null, null, null, null]) }}
+                />
+                <div className="relative w-full">
+                  <select
+                    value={selectedStation}
+                    onChange={e => setSelectedStation(e.target.value)}
+                    className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-cream font-dm text-sm appearance-none focus:outline-none focus:border-amber transition-colors cursor-pointer"
+                  >
+                    <option value="">All Stations</option>
+                    {stations.map(s => (
+                      <option key={s} value={s} className="bg-surface text-cream">{s}</option>
+                    ))}
+                  </select>
+                  <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-muted text-xs">▼</div>
+                </div>
+              </div>
               <button
-                onClick={() => setSelectedStation('')}
-                className={`px-3 py-1.5 rounded-full text-xs font-dm font-medium border transition-all ${
-                  selectedStation === '' ? 'bg-amber text-background border-amber' : 'bg-surface border-border text-muted hover:text-cream'
-                }`}
+                onClick={fetchPlans}
+                disabled={planLoading}
+                className="w-full py-3 rounded-xl psu-gradient text-white font-syne font-bold text-sm tracking-wide hover:opacity-90 transition-opacity disabled:opacity-50"
               >
-                All Stations
+                {planLoading ? 'Generating…' : 'Generate'}
               </button>
-              {stations.map(s => (
-                <button
-                  key={s}
-                  onClick={() => setSelectedStation(s === selectedStation ? '' : s)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-dm font-medium border transition-all ${
-                    selectedStation === s ? 'bg-amber text-background border-amber' : 'bg-surface border-border text-muted hover:text-cream'
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
             </div>
           )}
 
