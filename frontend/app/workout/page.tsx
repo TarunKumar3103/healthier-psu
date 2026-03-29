@@ -96,7 +96,7 @@ function ExerciseCard({
               <div className="absolute inset-0 animate-pulse bg-border rounded-none" />
             )}
             <img
-              src={`http://localhost:8000/exercises/image/${ex.id}`}
+              src={`${API_BASE}/exercises/image/${ex.id}`}
               alt={ex.name}
               loading="lazy"
               onLoad={() => setGifLoaded(true)}
