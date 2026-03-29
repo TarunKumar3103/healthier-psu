@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-tap-highlight-color: transparent; }
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+/* Hide scrollbars for chip rows */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Penn State gradient utility */
+.psu-gradient { background: linear-gradient(135deg, #1E407C 0%, #009CDE 100%); }
+.psu-gradient-text {
+  background: linear-gradient(135deg, #009CDE 0%, #4DAFD4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

@@ -1,0 +1,1271 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript" src="/cf_scripts/scripts/cfform.js"></script>
+<script type="text/javascript" src="/cf_scripts/scripts/masks.js"></script>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week's Menus</title>
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/fontawesome/all.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/forms.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/MENUS/css/responsive.css" />
+    <script src="/MENUS/js/bootstrap/bootstrap.bundle.min.js" defer></script>
+  <script type="text/javascript">
+<!--
+    _CF_checkfrmMenuFilters = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+<script type="text/javascript">
+<!--
+    _CF_checkfrmNutritionReport = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+<body>
+
+  
+
+  
+  <div id="wrapper">
+    
+    
+
+  
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-light" aria-label="Daily Menu Navigation Bar" id="Daily Menu Navigation Bar">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="https://www.psu.edu/">
+        <img src="/MENUS/images/markblue.png" alt="PSU Homepage" aria-label="PSU Homepage" />
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#applicationNavBar" aria-controls="applicationNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-label="Toggle Icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="applicationNavBar" aria-label="Daily Menu Sub Navigation Bar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/MENUS/user-pages/daily-menu.cfm" aria-label="Go to Daily Menu Homepage" id="Go to Daily Menu Homepage">Home</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="https://pennstateeats.psu.edu/" target="_blank" aria-label="Penn State Eats" id="Penn State Eats">Penn State Eats</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section id="page-header">
+    <div class="page-header">
+      
+      <nav id="breadcrumb" aria-label="Page Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/MENUS/user-pages/daily-menu.cfm" aria-label="Daily Menu Homepage" id="Daily Menu Homepage">Home</a></li>
+          
+          
+          <li class="breadcrumb-item" aria-current="Daily Menu">Daily Menu </li>
+        </ol>
+      </nav>
+      <nav id="application-title" aria-label="Food Services Menus">
+        Food Services Menus
+      </nav>
+    </div>
+  </section>
+
+
+    
+    <div class="container">
+      <div id="main">
+        
+        
+        
+        
+        <form name="frmMenuFilters" id="frmMenuFilters" action="daily-menu.cfm" method="post" class="g-3" onsubmit="return _CF_checkfrmMenuFilters(this)">
+          <div class="row pb-10 pl-10">
+            
+            
+            
+            
+            
+            
+            <div class="form-floating col-2">
+              <select name="selMenuDate" id="selMenuDate"  class="form-select"  aria-label="Select Menu Date Dropdown"  onchange="document.frmMenuFilters.submit();" >
+
+                <option value="3/28/26" selected>Saturday, March 28</option>
+                
+                  <option value="3/29/26" aria-label="3/29/26" >Sunday, March 29</option>
+                
+                  <option value="3/30/26" aria-label="3/30/26" >Monday, March 30</option>
+                
+                  <option value="3/31/26" aria-label="3/31/26" >Tuesday, March 31</option>
+                
+                  <option value="4/1/26" aria-label="4/1/26" >Wednesday, April 01</option>
+                
+                  <option value="4/2/26" aria-label="4/2/26" >Thursday, April 02</option>
+                
+                  <option value="4/3/26" aria-label="4/3/26" >Friday, April 03</option>
+                </select>
+              <label for="selMenuDate">Date</label>
+            </div>
+            
+            <div class="col-1">&nbsp;</div>
+            
+            <div class="form-floating col-2">
+              <select name="selMeal" id="selMeal"  class="form-select"  aria-label="Select Meal Dropdown"  onchange="document.frmMenuFilters.submit();" >
+
+                <option value=""></option>
+                
+                    <option value="Breakfast" aria-label="Breakfast" >Breakfast</option>
+                  
+                    <option value="Lunch" aria-label="Lunch" >Lunch</option>
+                  
+                    <option value="Dinner" aria-label="Dinner" >Dinner</option>
+                  
+                    <option value="Late Night" aria-label="Late Night" >Late Night</option>
+                  </select>
+              <label for="selMeal">Meal</label>
+            </div>
+            
+            <div class="col-1">&nbsp;</div>
+            
+            <div class="form-floating col-4">
+              <select id="selCampus" name="selCampus" class="form-select" aria-label="Select Meal Location" onchange="document.frmMenuFilters.submit();">
+                <option value=0></option>
+                
+                    <option value="40" aria-label="Altoona - Port Sky Cafe" >
+                      Altoona - Port Sky Cafe
+                    </option>
+                  
+                    <option value="42" aria-label="Beaver - Brodhead Bistro" >
+                      Beaver - Brodhead Bistro
+                    </option>
+                  
+                    <option value="47" aria-label="Behrend - Bruno's" >
+                      Behrend - Bruno's
+                    </option>
+                  
+                    <option value="46" aria-label="Behrend - Dobbins" >
+                      Behrend - Dobbins
+                    </option>
+                  
+                    <option value="56" aria-label="Berks - Tully's" >
+                      Berks - Tully's
+                    </option>
+                  
+                    <option value="59" aria-label="Brandywine - Blue Apple Cafe" >
+                      Brandywine - Blue Apple Cafe
+                    </option>
+                  
+                    <option value="44" aria-label="Greater Allegheny - Cafe Metro" >
+                      Greater Allegheny - Cafe Metro
+                    </option>
+                  
+                    <option value="50" aria-label="Harrisburg - Stacks" >
+                      Harrisburg - Stacks
+                    </option>
+                  
+                    <option value="53" aria-label="Harrisburg - The Outpost" >
+                      Harrisburg - The Outpost
+                    </option>
+                  
+                    <option value="52" aria-label="Hazleton - HighAcres Cafe" >
+                      Hazleton - HighAcres Cafe
+                    </option>
+                  
+                    <option value="54" aria-label="Mont Alto - The Mill Cafe" >
+                      Mont Alto - The Mill Cafe
+                    </option>
+                  
+                    <option value="11" aria-label="UP: East Food District @ Findlay" >
+                      UP: East Food District @ Findlay
+                    </option>
+                  
+                    <option value="17" aria-label="UP: North Food District @ Warnock" >
+                      UP: North Food District @ Warnock
+                    </option>
+                  
+                    <option value="14" aria-label="UP: Pollock Dining Commons " selected>
+                      UP: Pollock Dining Commons 
+                    </option>
+                  
+                    <option value="13" aria-label="UP: South Food District @ Redifer" >
+                      UP: South Food District @ Redifer
+                    </option>
+                  
+                    <option value="16" aria-label="UP: West Food District @ Waring" >
+                      UP: West Food District @ Waring
+                    </option>
+                  
+              </select>
+              <label for="selCampus">Location</label>
+            </div>
+            
+            <div class="col-2 additional-buttons">
+              
+              <a href="dietary-filters.cfm"><button type="button" class="btn btn-primary ml-20 mb-5o smaller-button" aria-label="Set Dietary Filters">Set Dietary Filters &#9656;</button></a>
+              <br clear="left" />
+              
+              <a href="https://www.absecom.psu.edu/DIETARY_REQUESTS/USER_PAGES/custom-food-order-win.cfm"><button type="button" class="btn btn-primary ml-20 smaller-button" aria-label="Pre Order Specialty Item or Meal">Pre-Order Specialty Item/Meal &#9656;</button></a>
+            </div>
+          </div>
+        </form>
+
+
+          <div class="col-12 mt-20 mb-20">
+            
+            <form name="frmNutritionReport" id="frmNutritionReport" action="nutrition-report-win.cfm" method="post" onsubmit="return _CF_checkfrmNutritionReport(this)">
+              <input type="hidden" name="selMenuDate" id="selMenuDate" value="3/28/26" />
+              <input type="hidden" name="selMeal" id="selMeal" value="" />
+              <input type="hidden" name="selCampus" id="selCampus" value="14" />
+            </form>
+
+              <h1 class="menu-header" aria-label="Lunch for Saturday, March 28, 2026">Lunch for Saturday, March 28, 2026 <button type="button" class="btn btn-danger nutrition-button" onclick="document.frmNutritionReport.submit();" aria-label="View Nutrition Information">Nutrition &#9656;</button></h1>
+              
+                <h1 class="location-menu-header" aria-label="Location UP: Pollock Dining Commons ">UP: Pollock Dining Commons </h1>
+              
+            <div class="col-8">
+              * Menus subject to change based on product availability.<br />
+              
+                  <h2 class="category-header" aria-label="PLATE">PLATE</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034306" aria-label="Biscuits">Biscuits</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034307" aria-label="Buttermilk Pancakes">Buttermilk Pancakes</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034308" aria-label="Egg, Tater Tot & Sausage Breakfast Casserole">Egg, Tater Tot & Sausage Breakfast Casserole</a>
+                  
+                      <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034309" aria-label="Fried Egg & Cheese Croissant">Fried Egg & Cheese Croissant</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034310" aria-label="Hard Cooked Eggs">Hard Cooked Eggs</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034311" aria-label="Oatmeal">Oatmeal</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034312" aria-label="Oatmeal Topping Bar">Oatmeal Topping Bar</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034313" aria-label="Scrambled Egg Whites">Scrambled Egg Whites</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034314" aria-label="Scrambled Eggs">Scrambled Eggs</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034315" aria-label="Tater Tots">Tater Tots</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034316" aria-label="Turkey Sausage Patty">Turkey Sausage Patty</a>
+                  
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="PLATE GRILL">PLATE GRILL</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034317" aria-label="Grilled Chicken">Grilled Chicken</a>
+                  
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="PLATE: VEGAN">PLATE: VEGAN</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034318" aria-label="Just Egg Broccoli & Cheddar Quiche">Just Egg Broccoli & Cheddar Quiche</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034319" aria-label="Veggie Burger">Veggie Burger</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="LEAF: ALLERGY FRIENDLY">LEAF: ALLERGY FRIENDLY</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034320" aria-label="Lexington Pulled Pork">Lexington Pulled Pork</a>
+                  
+                      <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034321" aria-label="Mixed Vegetables">Mixed Vegetables</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034322" aria-label="Roasted Cauliflower">Roasted Cauliflower</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034323" aria-label="Roasted Old Bay Redskin Potatoes">Roasted Old Bay Redskin Potatoes</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="LEAF: DELI SANDWICH">LEAF: DELI SANDWICH</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034324" aria-label="Caprese Focaccia Sandwich">Caprese Focaccia Sandwich</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034325" aria-label="Mini Everything Bagels">Mini Everything Bagels</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034326" aria-label="Mini Plain Bagels">Mini Plain Bagels</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="LEAF: STUDENT FARM FEATURE">LEAF: STUDENT FARM FEATURE</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034327" aria-label="Local Penn State Student Farm Features">Local Penn State Student Farm Features</a>
+                  
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="ENVY">ENVY</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034328" aria-label="Assorted Muffins">Assorted Muffins</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034329" aria-label="Mixed Berry Coffee Cake">Mixed Berry Coffee Cake</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034330" aria-label="Sugar Cookie w/Sprinkles">Sugar Cookie w/Sprinkles</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="SWIRL">SWIRL</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034331" aria-label="Belgian Waffle">Belgian Waffle</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="EDGE ONLINE MENU">EDGE ONLINE MENU</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034332" aria-label="Bacon, Egg & Cheese Croissant">Bacon, Egg & Cheese Croissant</a>
+                  
+                      <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034333" aria-label="Bagels">Bagels</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034334" aria-label="Egg & Cheese Croissant">Egg & Cheese Croissant</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034335" aria-label="PSU Bakery Items">PSU Bakery Items</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034336" aria-label="Sausage, Egg & Cheese Croissant">Sausage, Egg & Cheese Croissant</a>
+                  
+                      <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034337" aria-label="Starbucks We Proudly Brew Coffee">Starbucks We Proudly Brew Coffee</a>
+                  
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="FRESCO">FRESCO</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034338" aria-label="CYO Burrito Bowl">CYO Burrito Bowl</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034339" aria-label="CYO Walking Taco">CYO Walking Taco</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034340" aria-label="Dulce De Leche Cheesecake">Dulce De Leche Cheesecake</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034341" aria-label="Hot Chocolate Ganache Brownie">Hot Chocolate Ganache Brownie</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034342" aria-label="MTO Vegetarian Taco Salad">MTO Vegetarian Taco Salad</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="PLATE">PLATE</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034343" aria-label="Beef Stroganoff">Beef Stroganoff</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034344" aria-label="Blue Cheese Dressing">Blue Cheese Dressing</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034345" aria-label="Buttered Egg Noodles">Buttered Egg Noodles</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034346" aria-label="Celery Sticks">Celery Sticks</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034347" aria-label="Chef's Choice Chicken Wings">Chef's Choice Chicken Wings</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034348" aria-label="Hot Cauliflower Wings">Hot Cauliflower Wings</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034349" aria-label="Hot Wings">Hot Wings</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034350" aria-label="Italian Vegetables">Italian Vegetables</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034351" aria-label="Vegan Ranch Dressing">Vegan Ranch Dressing</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="PLATE GRILL">PLATE GRILL</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034352" aria-label="French Fries">French Fries</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034353" aria-label="Fried Chicken Slider">Fried Chicken Slider</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034354" aria-label="Grilled Chicken">Grilled Chicken</a>
+                  
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="PLATE: VEGAN">PLATE: VEGAN</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034355" aria-label="Crabless Cake w/ Cajun Aioli">Crabless Cake w/ Cajun Aioli</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034356" aria-label="Veggie Burger">Veggie Burger</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="LEAF: SOUP">LEAF: SOUP</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034357" aria-label="Soup of the Day (Please ask about Allergens).">Soup of the Day (Please ask about Allergens).</a>
+                  
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="LEAF: ALLERGY FRIENDLY">LEAF: ALLERGY FRIENDLY</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034358" aria-label="Lexington Pulled Pork">Lexington Pulled Pork</a>
+                  
+                      <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034359" aria-label="Mixed Vegetables">Mixed Vegetables</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034360" aria-label="Roasted Cauliflower">Roasted Cauliflower</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034361" aria-label="Roasted Old Bay Redskin Potatoes">Roasted Old Bay Redskin Potatoes</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="LEAF: STUDENT FARM FEATURE">LEAF: STUDENT FARM FEATURE</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034362" aria-label="Local Penn State Student Farm Features">Local Penn State Student Farm Features</a>
+                  
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="GUSTO">GUSTO</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034363" aria-label="Cheese Pizza">Cheese Pizza</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034364" aria-label="Chicken Tikka Masala Pizza">Chicken Tikka Masala Pizza</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034365" aria-label="Garlic Cheese Bread">Garlic Cheese Bread</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034366" aria-label="Meatballs in Sauce">Meatballs in Sauce</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034367" aria-label="Milano Sauce">Milano Sauce</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034368" aria-label="Penne Pasta">Penne Pasta</a>
+                  
+                      <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034369" aria-label="Pepperoni Pizza">Pepperoni Pizza</a>
+                  
+                      <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="ENVY">ENVY</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034370" aria-label="Cookies & Cream Cheesecake Square">Cookies & Cream Cheesecake Square</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034371" aria-label="Sugar Cookie w/Sprinkles">Sugar Cookie w/Sprinkles</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+                  <h2 class="category-header" aria-label="FRESCO">FRESCO</h2>
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034372" aria-label="CYO Burrito Bowl">CYO Burrito Bowl</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034373" aria-label="CYO Walking Taco">CYO Walking Taco</a>
+                  
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034374" aria-label="Dulce De Leche Cheesecake">Dulce De Leche Cheesecake</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034375" aria-label="Hot Chocolate Ganache Brownie">Hot Chocolate Ganache Brownie</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                </div>
+
+                
+                
+
+                
+                <div class="menu-items">
+                  <a href="nutrition-label.cfm?mid=188034376" aria-label="MTO Vegetarian Taco Salad">MTO Vegetarian Taco Salad</a>
+                  
+                      <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    
+                      <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    
+                      <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    
+                </div>
+
+                
+                
+            </div>
+          
+            <div class="col-4">
+              <h2 class="legend-header" aria-label="Legend">Legend</h2>
+              
+              
+                  <p class="icon-list">
+                    <img src="/MENUS/LegendImages/GF.gif" alt="Gluten Friendly - made w/o gluten-containing items" aria-label="Gluten Friendly - made w/o gluten-containing items" />
+                    Gluten Friendly - made w/o gluten-containing items
+                  </p>
+                
+                  <p class="icon-list">
+                    <img src="/MENUS/LegendImages/HF.gif" alt="Halal Friendly" aria-label="Halal Friendly" />
+                    Halal Friendly
+                  </p>
+                
+                  <p class="icon-list">
+                    <img src="/MENUS/LegendImages/M.gif" alt="Meatless" aria-label="Meatless" />
+                    Meatless
+                  </p>
+                
+                  <p class="icon-list">
+                    <img src="/MENUS/LegendImages/P.gif" alt="Contains Pork" aria-label="Contains Pork" />
+                    Contains Pork
+                  </p>
+                
+                  <p class="icon-list">
+                    <img src="/MENUS/LegendImages/V.gif" alt="Vegan" aria-label="Vegan" />
+                    Vegan
+                  </p>
+                
+                * Fried vegan and meatless items may be prepared in a shared fryer.  Fried halal friendly and gluten friendly items will not be prepared in a shared fryer.<br /><br />
+              
+            </div>
+          
+        </div>
+      </div>  
+    </div>  
+
+    
+    
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="region region-footer">
+        <div id="block-sitefooter" class="block block-block-content block-block-content522b614d-c448-47f4-8949-294a69e5d2fa">
+          <div class="lionshrine" style="position: relative;" aria-label="Nittany Lion Shrine Image">
+            <img src="/MENUS/images/website-footer-nittany-lion-shrine.png" alt="Nittany Lion Shrine" aria-label="Nittany Lion Shrine">
+          </div>
+          <div class="bottom-mark">
+            <a href="https://psu.edu" aria-label="PSU Home Page"><img src="/MENUS/images/psu-mark-footer.png" alt="PSU Shield" aria-label="PSU Shield"></a>
+          </div>
+          <div class="unit-info">
+            <ul class="details">
+              <li>
+                <div class="field field--name-field-text-field field--type-string field--label-hidden field__item" aria-label="Penn State Auxiliary and Business Services">Penn State Auxiliary and Business Services</div>
+              </li>
+              <li class="bold">
+                <div class="field field--name-field-contact-us-link field--type-link field--label-hidden field__item" aria-label="mailto:pennstatedining@psu.edu"><a href="mailto:pennstatedining@psu.edu">Contact Us</a></div>
+              </li>
+            </ul>
+            <ul class="with-border tight">
+              <li><a href="https://www.psu.edu/web-privacy-statement" aria-label="Privacy Statement Link">Privacy Statement</a></li>
+              <li><a href="https://policy.psu.edu/policies/ad85" aria-label="Non Discrimination Link">Non Discrimination</a></li>
+              <li><a href="https://www.psu.edu/accessibilitystatement" aria-label="Accessibility Link">Accessibility</a></li>
+              <li><a href="https://policy.psu.edu/policies/hr11" aria-label="Equal Opportunity Link">Equal Opportunity</a></li>
+              <li><a href="https://www.psu.edu/legal-statements" aria-label="Legal Statements Link">Legal Statements</a></li>
+            </ul>
+            <ul class="tight">
+              <li>The Pennsylvania State University &#169; 2021</li>
+              <li><a href="https://liveon.prod.fbweb.psu.edu/moLogin" aria-label="Live On Login Link">Login</a></li>
+              <li class="footer-svg"><img src="/MENUS/images/we-are-penn-state.svg" alt="We Are Penn State" aria-label="We Are Penn State"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>  
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "id": "2026-03-28T14:35:35.147287",
+      "date": "2026-03-28",
+      "plan_label": "\ud83d\udcaa Physique \u2014 2073 kcal",
+      "calories": 2073,
+      "protein_g": 199,
+      "goal_type": "physique"
+    },
+    {
+      "id": "2026-03-28T16:28:25.122762",
+      "date": "2026-03-28",
+      "plan_label": "\ud83e\udd69 Max Protein \u2014 2028 kcal",
+      "calories": 2028,
+      "protein_g": 210,
+      "goal_type": "physique"
+    }
+  ]
+}
